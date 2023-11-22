@@ -1,5 +1,5 @@
 body {
-  --nav-width: 150px;
+  --nav-width: 75px;
   margin: 0 0 0 var(--nav-width);
   font-family: 'Quicksand', sans-serif;
   font-size: 18px;
@@ -7,12 +7,12 @@ body {
 
 /* background: linear-gradient(to right, #ff8a00, #e52e71); */
 ::selection {
-  background-color: #ff8a00;
+  background-color: rgba(0, 148, 121, 0.27);
   color: #000;
 }
 
 .nav {
-  padding: 200px 0;
+
   position: fixed;
   left: 0;
   top: 0;
@@ -26,11 +26,8 @@ body {
 }
 
 .nav__link {
+  display: block;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
   padding: 12px 18px;
   text-decoration: none;
   color: #000;
@@ -41,7 +38,6 @@ body {
 
 .nav__link:hover {
   background-color: rgba(0, 148, 121, 0.345);
-
   /* background: rgba(255, 255, 255, 0.05); */
 }
 
