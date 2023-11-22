@@ -2,20 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/rocket.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Single Page App</title>
-    <!-- css link should be -->
-    <!-- <link rel="stylesheet" href="/static/css/index.css"> -->
+    <title>Sue's SPA</title>
+    <link rel="stylesheet" href="/static/css/reset.css" />
   </head>
   <body>
-    <!-- <div id="app"></div> -->
     <nav class="nav">
-      <a href="/" class="nav__link" data-link>Dashboard</a>
-      <a href="/posts" class="nav__link" data-link>Posts</a>
-      <a href="/settings" class="nav__link" data-link>Settings</a>
+      <a href="/" class="nav__link" data-link>
+        <img src="/home.svg" alt="Home" width="30" />
+        <span>Home</span>
+      </a>
+      <a href="/posts" class="nav__link" data-link>
+        <img src="/posts.svg" alt="Posts" width="30" />
+        <span>Posts</span>
+      </a>
+      <a href="/projects" class="nav__link" data-link>
+        <img src="/projects.svg" alt="Projects" width="30" />
+        <span>Projects</span>
+      </a>
+      <a href="/contact" class="nav__link" data-link>
+        <img src="/contact.svg" alt="contact" width="30" />
+        <span>Contact</span>
+      </a>
     </nav>
     <div id="app"></div>
+
+    <div class="alert-text">
+      <small> This website is written with vanilla js as spa.</small>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

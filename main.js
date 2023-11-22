@@ -1,7 +1,8 @@
 import "./style.css";
-import Dashboard from "./static/js/views/Dashboard";
+import Home from "./static/js/views/Home";
 import Posts from "./static/js/views/Posts";
-import Setting from "./static/js/views/Setting";
+import Projects from "./static/js/views/Projects";
+import Contact from "./static/js/views/Contact";
 
 // import javascriptLogo from './javascript.svg'
 // import viteLogo from '/vite.svg'
@@ -30,15 +31,19 @@ const router = async () => {
   const routes = [
     {
       path: "/",
-      view: Dashboard,
+      view: Home,
     },
     {
       path: "/posts",
       view: Posts,
     },
     {
-      path: "/settings",
-      view: Setting,
+      path: "/projects",
+      view: Projects,
+    },
+    {
+      path: "/contact",
+      view: Contact,
     },
   ];
 
@@ -49,6 +54,7 @@ const router = async () => {
       isMatch: location.pathname == route.path,
     };
   });
+  console.log(potentialMatches);
   let match = potentialMatches.find((potentialMatch) => potentialMatch.isMatch);
 
   if (!match) {
@@ -66,9 +72,10 @@ const router = async () => {
 window.addEventListener("popstate", router);
 document.addEventListener("DOMContentLoaded", () => {
   document.body.addEventListener("click", (e) => {
-    if (e.target.matches("[data-link]")) {
+    if (e.target.closest("[data-link]")) {
       e.preventDefault();
-      navigateTo(e.target.href);
+      // navigateTo(e.target.href);
+      navigateTo(event.target.closest("[data-link]").href);
     }
   });
   router();
