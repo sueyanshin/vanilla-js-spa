@@ -1,0 +1,18 @@
+.post-card {
+    cursor: pointer;
+    margin: 10px 0;
+    max-width: 400px;
+    padding: 18px;
+    border-radius: 10px;
+    background-color: rgba(0, 148, 121, 0.123);
+    display: flex;
+    text-decoration: underline;
+    text-decoration-color: #2e0202;
+    justify-content: space-between;
+
+}
+
+.post-card:hover {
+    background-color: rgba(0, 148, 121, 0.27);
+
+}

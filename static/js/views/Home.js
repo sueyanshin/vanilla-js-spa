@@ -8,8 +8,8 @@ export default class extends AbstractView {
   async getHtml() {
     return `
     <img src=""/>
-    <h1>Hello.</h1>
-    <h3>My name is Sue Yan Shin !</h3>
+    <h1 class="text-ttl">Hello.</h1>
+    <h3 class="text-subttl">My name is Sue Yan Shin !</h3>
     <p class="muted-text">I am an independent software developer currently based in Myanmar(Burma).🇲🇲 
     I've strong passion for coding in web, mobile and IoT.I primarily work with Java, Javascript, PHP, Dart(Flutter) & Firebase.
     </p>

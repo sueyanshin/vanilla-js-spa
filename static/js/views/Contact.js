@@ -7,13 +7,13 @@ export default class extends AbstractView {
   }
   async getHtml() {
     return `
-    <h1>Contact.</h1>
-    <h2>If you have project idea, feel free to contact. </h2>
-    <p>I am an independent software developer currently based in Myanmar. 
-    </p>
-    <p>
-    <a href="/posts" data-link>View recent posts</a>.
-    </p>
+    <h1 class="text-ttl">Contact.</h1>
+    <h2 class="muted-text">If you have project idea, feel free to contact. </h2>
+      <form>
+          <input type="text" class="text-box" placeholder="example@gmail.com"/><br>
+          <textarea class="text-box" placeholder="Enter your message"></textarea>
+          <button>Send</button>
+      </form>
     `;
   }
 }

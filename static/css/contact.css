@@ -1,0 +1,20 @@
+form {}
+
+form .text-box {
+    width: 80%;
+    padding: 12px;
+    border: none;
+    background-color: rgba(0, 148, 121, 0.123);
+    border-radius: 12px;
+    margin: 12px 0;
+}
+
+form button {
+    margin: 0 auto;
+    background-color: rgba(0, 148, 121, 0.123);
+    border: none;
+    padding: 12px 40px;
+    border-radius: 12px;
+    display: block;
+
+}
